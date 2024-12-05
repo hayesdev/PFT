@@ -100,7 +100,6 @@ def main():
             print("Invalid option. Enter 1, 2, or 3.")
 
             # CSV.get_transactions("01-01-2023", "30-12-2024")
-            # add()
 
             # CSV.inititalize_csv()
             # CSV.add_entry("20-07-2024", 125.62, "Income", "Salary")
