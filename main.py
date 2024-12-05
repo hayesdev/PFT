@@ -53,8 +53,8 @@ class CSV:
             print(filtered_df.to_string(index=False, formatters={
                   "date": lambda x: x.strftime(date_format)}))
 
-            # looks a litle weird, but using pandas we can find every row in the category column
-            # that equals Income, then grab the amount columns from those rows and sum the values
+            # looks a litle weird, but using pandas we can find every row in the "category" column
+            # that equals Income, then grab the "amount" columns from those rows and sum the values
             total_income = filtered_df[filtered_df["category"]
                                        == "Income"]["amount"].sum()
 
@@ -80,15 +80,31 @@ def add():
     CSV.add_entry(date, amount, category, description)
 
 
-CSV.get_transactions("01-01-2023", "30-12-2024")
-# add()
+def main():
+    while True:
+        print("\n1. Add a new transaction")
+        print("2. View transactions and sumamry within a date range")
+        print("3. Exit")
+        choice = input("Enter your choice (1-3): ")
 
-# CSV.inititalize_csv()
-# CSV.add_entry("20-07-2024", 125.62, "Income", "Salary")
+        if choice == "1":
+            add()
+        elif choice == "2":
+            start_date = get_date("Enter the start date (dd-mm-yyyy): ")
+            end_date = get_date("Enter the end date (dd-mm-yyyy): ")
+            df = CSV.get_transactions(start_date, end_date)
+        elif choice == "3":
+            print("Exiting... ")
+            break
+        else:
+            print("Invalid option. Enter 1, 2, or 3.")
 
-# def main():
-#     print("Hello world!")
+            # CSV.get_transactions("01-01-2023", "30-12-2024")
+            # add()
+
+            # CSV.inititalize_csv()
+            # CSV.add_entry("20-07-2024", 125.62, "Income", "Salary")
 
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
