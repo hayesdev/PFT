@@ -5,3 +5,23 @@ date,amount,category,description
 04-12-2024,87.65,Expense,phone bill
 11-09-2024,27.03,Expense,dinner
 30-11-2023,49.93,Expense,Clothing
+01-01-2023, 150.00, Income, Freelance Work
+15-01-2023, 75.50, Expense, Groceries
+22-01-2023, 200.00, Income, Consulting
+05-02-2023, 60.00, Expense, Transportation
+10-02-2023, 45.75, Expense, Dining Out
+18-02-2023, 300.00, Income, Project Payment
+25-03-2023, 120.00, Expense, Internet Bill
+05-04-2023, 50.00, Expense, Gym Membership
+15-04-2023, 250.00, Income, Seasonal Work
+22-04-2023, 80.00, Expense, Clothing
+30-05-2023, 175.00, Income, Bonus
+10-06-2023, 95.00, Expense, Electricity Bill
+20-06-2023, 40.00, Expense, Coffee Shop
+05-07-2023, 70.00, Income, Freelance Project
+15-07-2023, 150.00, Expense, Entertainment
+01-08-2023, 220.00, Income, Contract Work
+10-08-2023, 65.00, Expense, Dining
+25-09-2023, 90.00, Expense, Subscriptions
+05-10-2023, 300.00, Income, Commission
+15-10-2023, 55.00, Expense, Pet Supplies
